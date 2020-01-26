@@ -1,0 +1,140 @@
+<!-- Sidebar  -->
+<nav id="sidebar" [ngClass]="{'active':active==true}">
+    <div id="dismiss" (click)="close()">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+
+    <div class="sidebar-header">
+        <h3>Fashion</h3>
+    </div>
+
+    <ul class="list-unstyled">
+        
+        <li class="main-category active">
+          <a routerLink="/categories" style="font-size: 25px;">All Categories</a>
+        </li>
+      
+        <li class="main-category">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Men Fashion</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li id="tshirts">
+                    <a>T-Shirt</a>
+                </li>
+                <li id="pants">
+                    <a>Pants</a>
+                </li>
+                <li id="jackets">
+                    <a>Jakets</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="main-category">
+            <a href="#pageSubmenu" id="About" data-toggle="collapse" aria-expanded="false">Woman Fashion</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li id="dresses">
+                    <a>Dresses</a>
+                </li>
+                <li id="skirts">
+                    <a>Skirts</a>
+                </li>
+                <li id="Accessories">
+                    <a>Accessories</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</nav>
+
+<button type="button" id="sidebarCollapse" class="btn btn-info" (click)="open()">
+    <i class="fas fa-align-left"></i>
+</button>
+
+
+<!---------------------------------- content ---------------------------------->
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col-12 head">
+            <h1>Fashion Clothes 2020</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="col-12 content">
+
+            <div class="row" style="text-align: center;">
+                
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 itemWrapper" id="tshirts" *ngFor="let i of tShirts">
+                    <div class="card" style="width: 18rem; margin: 0 auto;">
+                        <img src="{{ i.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ i.productName }}</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet sfdd, consectetur adipiscing elit. Suspendisse at fringilla odio.</p>
+                          <a href="#" class="btn btn-primary">Buy Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 itemWrapper" id="pants" *ngFor="let i of pants">
+                    <div class="card" style="width: 18rem; margin: 0 auto;">
+                        <img src="{{ i.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ i.productName }}</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet sfdd, consectetur adipiscing elit. Suspendisse at fringilla odio.</p>
+                          <a href="#" class="btn btn-primary">Buy Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 itemWrapper" id="jackets" *ngFor="let i of jackets">
+                    <div class="card" style="width: 18rem; margin: 0 auto;">
+                        <img src="{{ i.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ i.productName }}</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet sfdd, consectetur adipiscing elit. Suspendisse at fringilla odio.</p>
+                          <a href="#" class="btn btn-primary">Buy Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 itemWrapper" id="dresses" *ngFor="let i of dresses">
+                    <div class="card" style="width: 18rem; margin: 0 auto;">
+                        <img src="{{ i.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ i.productName }}</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet sfdd, consectetur adipiscing elit. Suspendisse at fringilla odio.</p>
+                          <a href="#" class="btn btn-primary">Buy Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 itemWrapper" id="skirts" *ngFor="let i of skirts">
+                    <div class="card" style="width: 18rem; margin: 0 auto;">
+                        <img src="{{ i.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ i.productName }}</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet sfdd, consectetur adipiscing elit. Suspendisse at fringilla odio.</p>
+                          <a href="#" class="btn btn-primary">Buy Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 itemWrapper" id="Accessories" *ngFor="let i of Accessories">
+                    <div class="card" style="width: 18rem; margin: 0 auto;">
+                        <img src="{{ i.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ i.productName }}</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet sfdd, consectetur adipiscing elit. Suspendisse at fringilla odio.</p>
+                          <a href="#" class="btn btn-primary">Buy Product</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+  
+    </div>
+</div>

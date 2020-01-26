@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eagle-store';
+
+  show = false;
+
+  toggleMenu()
+  {
+    this.show = !this.show;
+  }
+
 }

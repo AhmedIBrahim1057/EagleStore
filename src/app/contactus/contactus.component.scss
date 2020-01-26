@@ -1,0 +1,35 @@
+.form
+{
+    padding-top: 50px;
+    form
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.image
+{
+    overflow: hidden;
+    text-align: center;
+    padding-top: 50px;
+    img
+    {
+        height: 500px ;
+    }
+    @media(max-width: 768px)
+    {
+        img
+        {
+            height: 400px ;
+        }
+    }
+
+    @media(max-width: 576px)
+    {
+        img
+        {
+            height: 200px;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebarCollapse
+{
+    position: fixed;
+    left: -1%;
+    top: 11%;
+    width: 70px;
+    text-align: right;
+    z-index: 99;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 9999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar::-webkit-scrollbar
+{
+    display: none;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #7386D5;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #7386D5;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #667ad3;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: rgb(52, 74, 158);
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+
+/*---------------------------------------------content----------------------------------------------*/
+
+.head
+{
+    text-align: center;
+    padding: 50px 0px;
+    .line
+    {
+        height: 2px;
+        width: 10vw;
+        margin: 20px auto;
+        background-color: #b6b6b6;
+    }
+}
+
+.content
+{
+    .itemWrapper
+    {
+        padding: 20px;
+        .item
+        {
+            background-color: #7386D5;
+            .head
+            {
+                height: 200px;
+                width: 100%;
+            }
+        }
+    }
+}

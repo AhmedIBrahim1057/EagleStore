@@ -1,0 +1,178 @@
+.banner
+{
+    background: url('../../assets/images/banner.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 91vh;
+    position: relative;
+    .overlay
+    {
+        background-color: rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: 100%;
+        .head
+        {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+    
+            h1
+            {
+                font-size: 60px;
+                letter-spacing: 5px;
+                font-family: 'Permanent Marker', cursive;
+                color: rgb(255, 255, 255);
+            }
+            span
+            {
+                color: rgb(76, 134, 228);
+            }
+    
+            .shopbtn
+            {
+                margin-top: 80px;
+                
+                a
+                {
+                    text-decoration: none;
+                    .btn
+                    {
+                        background-color: rgb(76, 134, 228);
+                        padding: 10px 80px !important;
+                        color:#fff;
+                        font-family: "Exo 2",sans-serif;
+                    }
+                    @media (max-width: 768px)
+                    {
+                        .btn
+                        {
+                            background-color: rgb(76, 134, 228);
+                            padding: 10px 30px !important;
+                            color:#fff;
+                            font-family: "Exo 2",sans-serif;
+                        }
+                    }
+                    .btn:hover
+                    {
+                        color: rgb(76, 134, 228);
+                        background-color:#fff;
+                        transition: all .5s ease-in-out;
+                    }
+                }
+            }
+            .media
+            {
+                padding-top: 80px;
+                color: rgb(76, 134, 228);
+                font-size: 25px;
+                .icon
+                {
+                    cursor: pointer;
+                    margin: 0px 10px; 
+                }
+                .icon:hover
+                {
+                    color: #fff;
+                    transition: all .3s ease-in-out; 
+                }
+            }
+        }
+        @media (max-width: 992px)
+        {
+            .head
+            {
+                h1
+                {
+                    font-size: 50px;
+                    letter-spacing: 5px;
+                    font-family: 'Permanent Marker', cursive;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        @media (max-width: 768px)
+        {
+            .head
+            {
+                h1
+                {
+                    font-size: 30px;
+                    letter-spacing: 5px;
+                    font-family: 'Permanent Marker', cursive;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        @media (min-width: 576px)
+        {}
+    }
+    .soicalWrapper
+    {
+        float: right;
+        height: 91vh;
+        .social
+        {
+            height: 100%;
+            position: relative;
+            width: 100px;
+            .links
+            {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-60px);
+                .icon
+                {
+                    font-size: 25px;
+                    margin: 10px 0;
+                    cursor: pointer;
+                    .fab
+                    {
+                        color: rgb(76, 134, 228);
+                    }
+                    .fab:hover
+                    {
+                        color: #fff;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+            .line1
+            {
+                position: absolute;
+                top: 15%;
+                left: 10%;
+                transform: translateY(-50px);
+                width: 5px;
+                background-color: rgb(76, 134, 228);
+                height: 30vh;
+                border-radius: 20px;
+            }
+            .line2
+            {
+                position: absolute;
+                bottom: 11%;
+                left: 10%;
+                transform: translateY(50px);
+                width: 5px;
+                background-color: rgb(76, 134, 228);
+                height: 30vh;
+                border-radius: 20px;
+            }
+        }
+    }
+    @media (max-width: 768px)
+    {
+        .soicalWrapper
+        {
+            display: none;
+        }
+    }
+    @media (min-width: 768px)
+    {
+        .media
+        {
+            display: none;
+        }
+    }
+}
